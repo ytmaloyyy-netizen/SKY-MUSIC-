@@ -1,0 +1,12 @@
+aiogram>=3.13.0
+python-dotenv>=1.0.1
+aiosqlite>=0.20.0
+pydub>=0.25.1
+librosa>=0.10.2
+soundfile>=0.12.1
+numpy>=1.26.4
+scipy>=1.13.0
+mutagen>=1.47.0
+aiohttp>=3.10.0
+demucs>=4.0.1
+torch>=2.3.0
