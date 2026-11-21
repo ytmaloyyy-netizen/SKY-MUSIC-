@@ -275,3 +275,5 @@ async def assign_role(
         return False, "Нельзя изменять или снимать роль DEVELOPER."
 
     now = _now
+async def get_user_files(*args, **kwargs):
+    return []
