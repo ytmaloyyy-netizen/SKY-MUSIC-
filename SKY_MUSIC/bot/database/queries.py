@@ -280,4 +280,7 @@ async def get_user_files(*args, **kwargs):
 
 async def add_processing_history(*args, **kwargs):
     return None
+
+async def register_user_file(*args, **kwargs):
+    return None
     
