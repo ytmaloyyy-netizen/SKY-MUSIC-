@@ -118,4 +118,12 @@ def dev_broadcast_audience_keyboard() -> InlineKeyboardMarkup:
             ],
             [
                 InlineKeyboardButton(text="🎧 Только DEFAULT", callback_data="dev_bc_aud:default"),
-                InlineKeyboardButton(text
+                InlineKeyboardButton(text="🛡️ Только ADMIN", callback_data="dev_bc_aud:admin"),
+            ],
+            [
+                InlineKeyboardButton(text="⬅️ Назад", callback_data="dev:panel"),
+                InlineKeyboardButton(text="🏠 Главное меню", callback_data="menu:main"),
+            ],
+        ]
+                )
+    
