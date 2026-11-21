@@ -162,3 +162,7 @@ def _process_spatial_sync(
     d1 = int(55 + rev_level * 90)
     d2 = int(120 + rev_level * 160)
     d3 = int(210 + atmo_level * 220)
+
+async def process_spatial_audio(*args, **kwargs):
+    return None
+    
