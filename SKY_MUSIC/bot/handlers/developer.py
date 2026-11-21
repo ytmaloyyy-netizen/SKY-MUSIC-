@@ -448,4 +448,4 @@ async def handle_dev_ban_input(message: Message, state: FSMContext, db_user: dic
         await db.conn.commit()
         await message.answer(f"🚫 Пользователь <code>{target_id}</code> заблокирован.", reply_markup=dev_bans_keyboard())
     elif action == "unlock":
-        await db.conn.execute("UPDATE users SET is_banned = 0, ban_reason = NULL WHERE us
+        await db.conn.execute("UPDATE users SET is_banned = 0, ban_reason = NULL WHERE user_id = ?", (user_id,))
