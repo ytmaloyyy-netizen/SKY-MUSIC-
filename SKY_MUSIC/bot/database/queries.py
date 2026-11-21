@@ -277,3 +277,7 @@ async def assign_role(
     now = _now
 async def get_user_files(*args, **kwargs):
     return []
+
+async def add_processing_history(*args, **kwargs):
+    return None
+    
