@@ -126,4 +126,18 @@ def dev_broadcast_audience_keyboard() -> InlineKeyboardMarkup:
             ],
         ]
                 )
+
+def dev_broadcast_confirm_keyboard() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        inline_keyboard=[
+            [
+                InlineKeyboardButton(text="✅ Отправить рассылку", callback_data="dev_bc_confirm:yes"),
+                InlineKeyboardButton(text="❌ Отмена", callback_data="dev_bc_confirm:no"),
+            ],
+            [
+                InlineKeyboardButton(text="⬅️ Назад", callback_data="dev:broadcast"),
+                InlineKeyboardButton(text="🏠 Главное меню", callback_data="menu:main"),
+            ],
+        ]
+    )
     
